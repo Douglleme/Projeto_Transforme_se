@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+
+<Script>
+
+    /*11 - Modifique o programa anterior para não aceitar a entrada do número zero, e requisitar a
+    digitação de outro número neste caso.
+     */
+
+    var array = [];
+    var numerosPares = [];
+    var numerosImpares = [];
+
+    for (let i = 0; i < 10; i++) {
+
+        array[i] = Number(prompt("Digite um número"));
+
+        /* O comando abaixo bloqueia o digito do número 0
+        mas está entrando na 'contagem' dos 10 números pedidos.
+        Não consegui ajustar essa parte para não ser cconsiderado.*/
+        if(array[i] === 0) {
+            alert ("Digito inválido, digite novamente");
+        }
+        else
+
+
+        if ((array[i] % 2) == 0) {
+            numerosPares.push(array[i]);
+        }
+        else {
+
+            numerosImpares.push(array[i]);
+
+        }
+    }
+
+    for (let i = 0; i < numerosPares.length; i++) {
+
+        document.write("Número par " + numerosPares[i] + "<br>");
+    }
+
+    for (let i = 0; i < numerosImpares.length; i++) {
+        document.write("Número ímpar " + numerosImpares[i] + "<br>");
+    }
+
+</script>

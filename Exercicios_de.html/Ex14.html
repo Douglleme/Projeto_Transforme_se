@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+
+<script>
+    var nome = prompt("Digite seu nome:");
+    var Km = Number.parseFloat(prompt("Quantos Km você rodou com o carro?"));
+    var Dias = Number.parseFloat(prompt("De quantas diárias você usufruiu?"));
+    
+    var locacaoDia = 90 * Dias;
+    var KmRodado = 0.20 * Km;
+    var LocacaoFinal = locacaoDia + KmRodado
+
+    document.write("Seja bem-vindo : " + nome);
+    document.write("<BR>");
+    document.write("Total da sua locação/dia em R$ " + locacaoDia);
+    document.write("<BR>");
+    document.write("Total de Km rodados em R$ " + KmRodado);
+    document.write("<BR>"); 
+    document.write("Sua locação ficou em um total de R$ " + LocacaoFinal);
+    document.write("<BR>");
+     
+</script>

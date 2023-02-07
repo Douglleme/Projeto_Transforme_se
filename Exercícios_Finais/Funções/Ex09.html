@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<Script>
+
+    /* 9 - Faça uma função que recebe um valor inteiro e verifica se o valor é positivo ou negativo.
+    A função deve retornar um valor booleano.
+     */
+
+    var numero = Number.parseInt(prompt("Digite um número"));
+    dadoNumero(numero);
+
+    function dadoNumero(numero) {
+        if (numero >= 0) {
+            alert("Verdadeiro");
+            return true;
+        }
+        else if (numero < 0) {
+            alert("Falso");
+            return false;
+        }
+    }
+
+</Script>

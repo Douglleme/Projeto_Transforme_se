@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+
+<Script>
+    /*Faça um algoritmo que leia um determinado ano e mostre se ele é ou não
+    BISSEXTO.*/
+
+    //Leia o número digitado
+
+    var ano = Number.parseInt(prompt("Digite o ano"));
+
+
+    if ((ano % 400 == 0) || (ano % 4 == 0) && (ano % 100 != 0)) {
+        document.write(" Ano é bissexto!");
+    }
+    else {
+        document.write("Ano não é bissexto!");
+    }
+    
+</script>

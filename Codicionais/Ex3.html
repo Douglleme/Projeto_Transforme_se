@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<script>
+
+/*Crie um algoritmo que leia o nome e as duas notas de um aluno,
+calcule a sua média e mostre na tela.
+No final, analise a média e mostre se o aluno teve ou não um bom aproveitamento
+(se ficou acima da média 7.0).*/
+
+    //Receber a primeira nota.
+    var nota1 = Number.parseInt(prompt("Digite a primeira nota"));
+
+    //Receber a segunda nota.
+    var nota2 = Number.parseInt(prompt("Digite a segunda nota"));
+
+    //Calcular a média das notas.
+    var media = (nota1 + nota2) / 2;
+
+    //Realizar o exercício.
+    if (media >= 7.0) {
+        document.write("Você atingiu a média 7, está aprovado.");
+    }
+    else {
+        document.write("Você não atingiu a média 7, está reprovado");
+    }
+</script>

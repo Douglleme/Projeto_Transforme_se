@@ -1,0 +1,15 @@
+<meta charset="UTF-8">
+
+<Script>
+
+    /* 2 - Em épocas de pouco dinheiro, os comerciantes estão procurando aumentar suas vendas
+    oferecendo desconto. Faça um algoritmo que possa receber um valor de um produto e que
+    escreva o novo valor tendo em vista que o desconto foi de 9%.
+     */
+
+    var valorProduto = Number.parseInt(prompt("Digite o valor do produto:"));
+    var valorFinal = (valorProduto - 9);
+
+    document.write("O valor final do produto com desconto será de: " + valorFinal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+
+</Script>

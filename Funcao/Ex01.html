@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<script>
+
+var pulaLinha = Number(prompt("Quantas linhasvezes deseja repetir seu nome?"));    
+var nome = prompt("Digite seu nome:");
+var dataNascimento = prompt("Digite sua data de nascimento:");
+var salario = Number(prompt("Digite seu salário"));
+var sexo = prompt("Digite seu sexo. F para Feminino e M para Masculino");
+
+if(sexo == "F"){
+    salario = salario + (salario * (10 / 100));
+}
+else {
+    salario = salario + (salario * (8 / 100));
+}
+document.write("Nome " + nome);
+pulaLinha();
+document.write("Data de Nascimento " + dataNascimento);
+pulaLinha();
+document.write("Salário " + salario.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+
+function pulaLinha (qtdLinhas) {
+    document.write("<br>");
+    document.write("<hr>");
+}
+
+</script>

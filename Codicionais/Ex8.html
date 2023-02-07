@@ -1,0 +1,17 @@
+<meta charset="UTF-8">
+
+<script>
+    /*Faça um algoritmo que pergunte a distância que um passageiro deseja percorrer em
+Km. Calcule o preço da passagem, cobrando R$0.50 por Km para viagens até
+200Km e R$0.45 para viagens mais longas.*/
+
+    var viagem = Number.parseFloat(prompt("Digite a distancia da sua viagem em km:"));
+    var viagemAteDuzentosKm = viagem * 0.50;
+    var viagemAcimaDeDuzentosKm = viagem * 0.45;
+    if (viagem <= 200) {
+        document.write("Sua viagem custará: " + viagemAteDuzentosKm.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+    }
+    else{
+        document.write("Sua viagem custará: " + viagemAcimaDeDuzentosKm.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+    }
+</script>

@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<Script>
+
+/* 8 - Faça uma função que recebe a idade de uma pessoa em anos, meses e dias e retorna
+essa idade expressa em dias.
+ */
+
+/* var dataNascimento = Number.parseFloat(prompt("Digite sua idade: "));
+
+var dias = dataNascimento * 365
+var meses = dataNascimento * 12
+
+document.write("Você possui " + meses + " meses e " + dias + " dias de vida"); */
+
+
+var idade = Number.parseInt(prompt("Digite sua idade:"));
+
+document.write("Você possui " + meses(idade) + " meses e " + dias(idade) + " dias de vida");
+
+function meses(idade) {
+    return idade * 12;
+}
+
+function dias(idade) {
+    return idade * 365;
+}
+
+</Script>
